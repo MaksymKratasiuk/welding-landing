@@ -43,13 +43,13 @@ const translations = {
         test3_text: "Doskonałe wyposażenie i świetna atmosfera. Czułem się pewnie już po pierwszym tygodniu!",
         test3_author: "- Marcin W.",
         contact_title: "Zapisz się na kurs",
-                form_name: "Imię i nazwisko",
-                form_email: "Email",
-                form_phone: "Telefon",
-                form_message: "Wiadomość",
-                form_gdpr: "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu i informowania o kursach spawania zgodnie z RODO.",
-                form_submit: "Wyślij zgłoszenie",
-        footer_text: "© 2025 WeldingHub. Wszystkie prawa zastrzeżone."
+        form_name: "Imię i nazwisko",
+        form_email: "Email",
+        form_phone: "Telefon",
+        form_message: "Wiadomość",
+        form_submit: "Wyślij zgłoszenie",
+        footer_text: "© 2025 WeldingHub. Wszystkie prawa zastrzeżone.",
+        form_consent: 'Akceptuję <a href="/polityka-prywatnosci.html" target="_blank">politykę prywatności</a> i wyrażam zgodę na przetwarzanie moich danych osobowych'
     },
     uk: {
         nav_home: "Головна",
@@ -94,13 +94,13 @@ const translations = {
         test3_text: "Відмінне обладнання та чудова атмосфера. Я почувався впевнено вже після першого тижня!",
         test3_author: "- Марцін В.",
         contact_title: "Записатися на курс",
-                form_name: "Ім'я та прізвище",
-                form_email: "Email",
-                form_phone: "Телефон",
-                form_message: "Повідомлення",
-                form_gdpr: "Я погоджуюся на обробку моїх персональних даних з метою зв'язку та інформування про курси зварювання згідно з GDPR.",
-                form_submit: "Надіслати заявку",
-        footer_text: "© 2025 WeldingHub. Всі права захищені."
+        form_name: "Ім'я та прізвище",
+        form_email: "Email",
+        form_phone: "Телефон",
+        form_message: "Повідомлення",
+        form_submit: "Надіслати заявку",
+        footer_text: "© 2025 WeldingHub. Всі права захищені.",
+        form_consent: 'Приймаю <a href="/polityka-prywatnosci.html" target="_blank">політику конфіденційності</a> та даю згоду на обробку моїх персональних даних'
     },
     en: {
         nav_home: "Home",
@@ -145,12 +145,12 @@ const translations = {
         test3_text: "Excellent equipment and great atmosphere. I felt confident after the first week!",
         test3_author: "- Martin W.",
         contact_title: "Enroll in the Course",
-                form_name: "Full Name",
-                form_email: "Email",
-                form_phone: "Phone",
-                form_message: "Message",
-                form_gdpr: "I consent to the processing of my personal data for contact and information about welding courses in accordance with GDPR.",
-                form_submit: "Send Application",
-        footer_text: "© 2025 WeldingHub. All rights reserved."
+        form_name: "Full Name",
+        form_email: "Email",
+        form_phone: "Phone",
+        form_message: "Message",
+        form_submit: "Send Application",
+        footer_text: "© 2025 WeldingHub. All rights reserved.",
+        form_consent: 'I accept the <a href="/polityka-prywatnosci.html" target="_blank">privacy policy</a> and consent to the processing of my personal data'
     }
 };

@@ -132,7 +132,7 @@
         </div>
     </section>
 
-   <!-- Contact Form -->
+    <!-- Contact Form -->
     <section class="contact-section" id="contact">
         <div class="contact-container">
             <h2 class="section-title" data-i18n="contact_title">Zapisz się na kurs</h2>
@@ -155,9 +155,11 @@
                 </div>
                 <div class="form-group checkbox-group">
                     <label class="checkbox-label">
-                        <input type="checkbox" name="gdpr" required>
-                        <span class="checkmark"></span>
-                        <span data-i18n="form_gdpr">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu i informowania o kursach spawania zgodnie z RODO.</span>
+                        <input type="checkbox" name="consent" required>
+                        <span data-i18n="form_consent">
+                            Akceptuję <a href="/polityka-prywatnosci.html" target="_blank">politykę prywatności</a> 
+                            i wyrażam zgodę na przetwarzanie moich danych osobowych
+                        </span>
                     </label>
                 </div>
                 <button type="submit" class="submit-btn" data-i18n="form_submit">Wyślij zgłoszenie</button>

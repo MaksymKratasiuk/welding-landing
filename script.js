@@ -10,7 +10,12 @@ function changeLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            // Для елементів що містять HTML (як наш checkbox)
+            if (key === 'form_consent') {
+                element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
+            }
         }
     });
 
@@ -46,21 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form Submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Check if GDPR checkbox is checked
-    const gdprCheckbox = this.querySelector('input[name="gdpr"]');
-    if (!gdprCheckbox.checked) {
-        alert('Please accept the GDPR consent to continue.');
-        return;
-    }
-    
-    // Here you can add form submission logic (Formspree, EmailJS, etc.)
-    alert(translations[currentLang].form_submit + ' ✓');
-    this.reset();
-});
+
 
 // Load saved language preference
 window.addEventListener('DOMContentLoaded', () => {
