@@ -50,6 +50,10 @@ const translations = {
                 form_submit: "Wyślij zgłoszenie",
                 footer_text: "© 2025 WeldingHub. Wszystkie prawa zastrzeżone.",
                 footer_privacy: "Polityka Prywatności",
+                cookie_title: "Używamy plików cookies",
+                cookie_message: "Ta strona używa plików cookies, aby zapewnić najlepszą jakość usług. Kontynuując przeglądanie, wyrażasz zgodę na ich użycie.",
+                cookie_accept: "Akceptuję",
+                cookie_decline: "Odrzuć",
         form_consent: 'Akceptuję <a href="/polityka-prywatnosci.html" target="_blank">politykę prywatności</a> i wyrażam zgodę na przetwarzanie moich danych osobowych'
     },
     uk: {
@@ -102,6 +106,10 @@ const translations = {
                 form_submit: "Надіслати заявку",
                 footer_text: "© 2025 WeldingHub. Всі права захищені.",
                 footer_privacy: "Політика Конфіденційності",
+                cookie_title: "Використовуємо файли cookies",
+                cookie_message: "Цей сайт використовує файли cookies для забезпечення найкращої якості послуг. Продовжуючи перегляд, ви погоджуєтесь на їх використання.",
+                cookie_accept: "Приймаю",
+                cookie_decline: "Відхилити",
         form_consent: 'Приймаю <a href="/polityka-prywatnosci.html" target="_blank">політику конфіденційності</a> та даю згоду на обробку моїх персональних даних'
     },
     en: {
@@ -154,6 +162,10 @@ const translations = {
                 form_submit: "Send Application",
                 footer_text: "© 2025 WeldingHub. All rights reserved.",
                 footer_privacy: "Privacy Policy",
+                cookie_title: "We use cookies",
+                cookie_message: "This website uses cookies to provide the best quality services. By continuing to browse, you consent to their use.",
+                cookie_accept: "Accept",
+                cookie_decline: "Decline",
         form_consent: 'I accept the <a href="/polityka-prywatnosci.html" target="_blank">privacy policy</a> and consent to the processing of my personal data'
     }
 };

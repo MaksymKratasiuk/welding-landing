@@ -53,6 +53,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
+// Cookie Banner Functions
+function showCookieBanner() {
+    const banner = document.getElementById('cookieBanner');
+    if (banner) {
+        banner.classList.add('show');
+    }
+}
+
+function hideCookieBanner() {
+    const banner = document.getElementById('cookieBanner');
+    if (banner) {
+        banner.classList.remove('show');
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    hideCookieBanner();
+    // Enable Google Analytics here if needed
+    console.log('Cookies accepted');
+}
+
+function declineCookies() {
+    localStorage.setItem('cookieConsent', 'declined');
+    hideCookieBanner();
+    // Disable Google Analytics here if needed
+    console.log('Cookies declined');
+}
+
+// Check cookie consent on page load
+function checkCookieConsent() {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+        // Show banner after a short delay
+        setTimeout(showCookieBanner, 1000);
+    }
+}
+
 // Load saved language preference
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage');
@@ -65,4 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // Check cookie consent
+    checkCookieConsent();
 });
