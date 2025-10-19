@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeldingHub - Profesjonalne Kursy Spawania TIG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">WeldingHub</div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-i18n="nav_home">Strona główna</a></li>
+            <li><a href="#about" data-i18n="nav_about">O kursie</a></li>
+            <li><a href="#pricing" data-i18n="nav_pricing">Ceny</a></li>
+            <li><a href="#testimonials" data-i18n="nav_testimonials">Opinie</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Kontakt</a></li>
+            <li class="lang-switcher">
+                <button class="lang-btn active" onclick="changeLanguage('pl')">PL</button>
+                <button class="lang-btn" onclick="changeLanguage('uk')">UA</button>
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">
+                Profesjonalne Kursy
+                <span class="hero-highlight" data-i18n="hero_highlight">Spawania TIG</span>
+            </h1>
+            <p data-i18n="hero_subtitle">Naucz się spawać rury metodą TIG od prawdziwych mistrzów</p>
+            <a href="#contact" class="cta-button" data-i18n="hero_cta">Zapisz się teraz</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title" data-i18n="about_title">Czego się nauczysz</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3 data-i18n="skill1_title">Spawanie TIG</h3>
+                <p data-i18n="skill1_desc">Opanuj technikę spawania rur metodą TIG od podstaw do poziomu profesjonalnego</p>
+            </div>
+            <div class="about-card">
+                <h3 data-i18n="skill2_title">Bezpieczeństwo</h3>
+                <p data-i18n="skill2_desc">Poznaj wszystkie zasady bezpieczeństwa i właściwe procedury pracy</p>
+            </div>
+            <div class="about-card">
+                <h3 data-i18n="skill3_title">Praktyka</h3>
+                <p data-i18n="skill3_desc">Zdobądź doświadczenie praktyczne na nowoczesnym sprzęcie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates">
+        <div class="cert-content">
+            <div class="cert-icon">🏆</div>
+            <h2 class="section-title" data-i18n="cert_title">Certyfikaty</h2>
+            <p data-i18n="cert_desc">Po ukończeniu kursu otrzymasz oficjalny certyfikat potwierdzający Twoje umiejętności spawania TIG. Nasz certyfikat jest rozpoznawany przez pracodawców w całej branży.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2 class="section-title" data-i18n="pricing_title">Cennik</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3 data-i18n="plan1_name">Kurs Podstawowy</h3>
+                <div class="price">2500 PLN</div>
+                <ul class="price-features">
+                    <li data-i18n="plan1_feat1">40 godzin praktyki</li>
+                    <li data-i18n="plan1_feat2">Materiały szkoleniowe</li>
+                    <li data-i18n="plan1_feat3">Certyfikat ukończenia</li>
+                </ul>
+                <a href="#contact" class="cta-button" data-i18n="pricing_cta">Wybierz</a>
+            </div>
+            <div class="price-card featured">
+                <h3 data-i18n="plan2_name">Kurs Zaawansowany</h3>
+                <div class="price">3500 PLN</div>
+                <ul class="price-features">
+                    <li data-i18n="plan2_feat1">60 godzin praktyki</li>
+                    <li data-i18n="plan2_feat2">Materiały szkoleniowe</li>
+                    <li data-i18n="plan2_feat3">Certyfikat międzynarodowy</li>
+                    <li data-i18n="plan2_feat4">Pomoc w znalezieniu pracy</li>
+                </ul>
+                <a href="#contact" class="cta-button" data-i18n="pricing_cta">Wybierz</a>
+            </div>
+            <div class="price-card">
+                <h3 data-i18n="plan3_name">Kurs Indywidualny</h3>
+                <div class="price" data-i18n="plan3_price">Na zapytanie</div>
+                <ul class="price-features">
+                    <li data-i18n="plan3_feat1">Elastyczne godziny</li>
+                    <li data-i18n="plan3_feat2">Indywidualne podejście</li>
+                    <li data-i18n="plan3_feat3">Dostosowany program</li>
+                </ul>
+                <a href="#contact" class="cta-button" data-i18n="pricing_cta">Wybierz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2 class="section-title" data-i18n="testimonials_title">Opinie kursantów</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text" data-i18n="test1_text">Fantastyczny kurs! Nauczyłem się spawać rury od prawdziwych profesjonalistów. Teraz pracuję w świetnej firmie!</p>
+                <p class="testimonial-author" data-i18n="test1_author">- Piotr K.</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text" data-i18n="test2_text">Instruktorzy są bardzo kompetentni i cierpliwi. Polecam każdemu, kto chce zacząć karierę w spawalnictwie.</p>
+                <p class="testimonial-author" data-i18n="test2_author">- Anna M.</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text" data-i18n="test3_text">Doskonałe wyposażenie i świetna atmosfera. Czułem się pewnie już po pierwszym tygodniu!</p>
+                <p class="testimonial-author" data-i18n="test3_author">- Marcin W.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title" data-i18n="contact_title">Zapisz się na kurs</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label data-i18n="form_name">Imię i nazwisko</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_phone">Telefon</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_message">Wiadomość</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-i18n="form_submit">Wyślij zgłoszenie</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer_text">© 2025 WeldingHub. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
