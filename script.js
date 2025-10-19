@@ -46,7 +46,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Check if GDPR checkbox is checked
+    const gdprCheckbox = this.querySelector('input[name="gdpr"]');
+    if (!gdprCheckbox.checked) {
+        alert('Please accept the GDPR consent to continue.');
+        return;
+    }
+    
+    // Here you can add form submission logic (Formspree, EmailJS, etc.)
+    alert(translations[currentLang].form_submit + ' ✓');
+    this.reset();
+});
 
 // Load saved language preference
 window.addEventListener('DOMContentLoaded', () => {
