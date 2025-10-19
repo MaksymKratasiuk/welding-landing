@@ -406,8 +406,10 @@ section {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .checkmark {
@@ -527,6 +529,11 @@ footer p {
 
     .checkbox-label {
         font-size: 0.85rem;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        height: 18px;
+        width: 18px;
     }
 
     .checkmark {
