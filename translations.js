@@ -47,8 +47,9 @@ const translations = {
         form_email: "Email",
         form_phone: "Telefon",
         form_message: "Wiadomość",
-        form_submit: "Wyślij zgłoszenie",
-        footer_text: "© 2025 WeldingHub. Wszystkie prawa zastrzeżone.",
+                form_submit: "Wyślij zgłoszenie",
+                footer_text: "© 2025 WeldingHub. Wszystkie prawa zastrzeżone.",
+                footer_privacy: "Polityka Prywatności",
         form_consent: 'Akceptuję <a href="/polityka-prywatnosci.html" target="_blank">politykę prywatności</a> i wyrażam zgodę na przetwarzanie moich danych osobowych'
     },
     uk: {
@@ -98,8 +99,9 @@ const translations = {
         form_email: "Email",
         form_phone: "Телефон",
         form_message: "Повідомлення",
-        form_submit: "Надіслати заявку",
-        footer_text: "© 2025 WeldingHub. Всі права захищені.",
+                form_submit: "Надіслати заявку",
+                footer_text: "© 2025 WeldingHub. Всі права захищені.",
+                footer_privacy: "Політика Конфіденційності",
         form_consent: 'Приймаю <a href="/polityka-prywatnosci.html" target="_blank">політику конфіденційності</a> та даю згоду на обробку моїх персональних даних'
     },
     en: {
@@ -149,8 +151,9 @@ const translations = {
         form_email: "Email",
         form_phone: "Phone",
         form_message: "Message",
-        form_submit: "Send Application",
-        footer_text: "© 2025 WeldingHub. All rights reserved.",
+                form_submit: "Send Application",
+                footer_text: "© 2025 WeldingHub. All rights reserved.",
+                footer_privacy: "Privacy Policy",
         form_consent: 'I accept the <a href="/polityka-prywatnosci.html" target="_blank">privacy policy</a> and consent to the processing of my personal data'
     }
 };
